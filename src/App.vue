@@ -2,6 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <div>
     今天将会是一个新的开始
+    哈哈哈
   </div>
   <HelloWorlds msg="Welcome to Your Vue.js App"/>
 </template>
