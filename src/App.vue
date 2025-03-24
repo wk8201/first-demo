@@ -3,6 +3,7 @@
   <div>
     今天将会是一个新的开始
     哈哈哈
+    git remote set-url origin git@github.com:wk8201/first-demo.git
   </div>
   <HelloWorlds msg="Welcome to Your Vue.js App"/>
 </template>
