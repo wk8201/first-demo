@@ -6,7 +6,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "rm -rf dist && npm run build && git worktree add --no-checkout ../deploy gh-pages && cd ../deploy && git rm -rf . && cp -r ../first-demo/dist/* . && git add . && git commit -m 'Deploy' && git push origin gh-pages --force && cd ../first-demo && git worktree remove ../deploy"
   },
   "dependencies": {
     "core-js": "^3.8.3",
