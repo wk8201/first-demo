@@ -1,18 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <div>
-    今天将会是一个新的开始
+  <div class="title">
+    最新爆料：全新烛龙宝藏先知
   </div>
-  <HelloWorlds msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/title.jpg">
+  <!-- <HelloWorlds msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-import HelloWorlds from './components/HelloWorld.vue'
+// import HelloWorlds from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorlds
+    // HelloWorlds
   }
 }
 </script>
@@ -25,5 +25,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.title{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
 }
 </style>
