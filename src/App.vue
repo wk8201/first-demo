@@ -1,20 +1,24 @@
 <template>
-  <div class="title">
-    最新爆料：全新烛龙宝藏先知
-  </div>
-  <img alt="Vue logo" src="./assets/title.jpg">
-  <!-- <HelloWorlds msg="Welcome to Your Vue.js App"/> -->
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+    <div class="relative h-[200px] w-full overflow-hidden">
+      <!-- <VideoText src="https://cdn.magicui.design/ocean-small.webm"> INSPIRA </VideoText> -->
+    </div>
+    <div>
+      SHAN HAI JING
+    </div>
 </template>
 
-<script>
-// import HelloWorlds from './components/HelloWorld.vue'
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+// import HelloWorld from './components/HelloWorld.vue';
 
-export default {
-  name: 'App',
-  components: {
-    // HelloWorlds
-  }
-}
+@Options({
+  // components: {
+  //   HelloWorld,
+  // },
+})
+export default class App extends Vue {}
 </script>
 
 <style>
@@ -24,14 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-.title{
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: 600;
 }
 </style>
